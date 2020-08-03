@@ -510,7 +510,7 @@ describe('Dashboard', () => {
     const { getByText, getByTestId } = render(<Dashboard />);
 
     await wait(() => expect(getByText('Ao molho')).toBeTruthy(), {
-      timeout: 200,
+      timeout: 2000,
     });
 
     await act(async () => {
